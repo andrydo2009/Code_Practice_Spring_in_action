@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 import static tacos.Ingredient.Type;
 
-@Slf4j //генерирует свойство типа Logger, интерефнйс журналирования для java
+@Slf4j //генерирует свойство типа Logger, интерфейс журналирования для java
 @Controller
 @RequestMapping("/design")
 @SessionAttributes("tacoOrder")
