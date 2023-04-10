@@ -12,7 +12,7 @@ import tacos.Ingredient.Type;
 public class IngredientByIdConverter implements Converter<String, Ingredient> {
     /* класс, который реализует интерфейс Converter с методом convert(),
      получающим значение одного типа и преобразующим его в значение другого типа*/
-    private Map<String, Ingredient> ingredientMap = new HashMap<>();
+    private  Map<String, Ingredient> ingredientMap = new HashMap<>();
 
     public IngredientByIdConverter() {
         ingredientMap.put("FLTO",

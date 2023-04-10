@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 import static tacos.Ingredient.Type;
 
-@Slf4j//гeнерирует свойство типа Logger, интерефнйс журналирования для java
+@Slf4j //генерирует свойство типа Logger, интерефнйс журналирования для java
 @Controller
 @RequestMapping("/design")
 @SessionAttributes("tacoOrder")
@@ -67,10 +67,11 @@ public class DesignTacoController {
                               @ModelAttribute TacoOrder tacoOrder) {
         tacoOrder.addTaco(taco);
         log.info("Processing taco: {}", taco);
-        return "redirect:/orders/current";/*префикс "redirect:", сообща-
-ющий, что это представление с перенаправлением, то есть после за-
-вершения processTaco() браузер пользователя должен открыть дру-
-гую страницу, отправив запрос GET с путем /orders/current*/
+        return "redirect:/orders/current";
+        /*префикс "redirect:", сообща-
+        ющий, что это представление с перенаправлением, то есть после за-
+        вершения processTaco() браузер пользователя должен открыть дру-
+        гую страницу, отправив запрос GET с путем /orders/current*/
     }
 
 
